@@ -12,6 +12,8 @@ function draw() {
 
 function say(something) {
 	robot.setVoice(Math.floor(random(robot.voices.length)));  // Randomize the available voices
+	robot.setPitch(1.0);
+	robot.setRate(1.1);
 	robot.speak(something); // say something
 }
 
