@@ -12,7 +12,7 @@ function preload() {
 
 function setup() {
   serial = new p5.SerialPort();    // new instance of the serial port library
-  serial.open(portName);           // open a serial port
+  serial.open(portName);           // open the serial port
   soundModel.classify(gotResults);
 }
 
