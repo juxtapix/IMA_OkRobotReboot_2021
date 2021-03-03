@@ -6,15 +6,19 @@ void setup() {
 }
  
 void loop() {
- if (Serial.available() > 0) {     // check if serial data available
-   int inByte = Serial.read();     // read incoming bytes
+ // send data only when you receive data:
+ if (Serial.available() > 0) {
+   // read the incoming data:
+   int inByte = Serial.read(); 
+   
    if (inByte == 1) {
      digitalWrite(ledPin, HIGH);  // LED on
    } else {
      digitalWrite(ledPin, LOW);   // LED off
    }
+   // print received bytes
    Serial.print("Received: ");
-   Serial.println(inByte);        // print received bytes
+   Serial.println(inByte);       
    delay(100);                   
  }
 }
