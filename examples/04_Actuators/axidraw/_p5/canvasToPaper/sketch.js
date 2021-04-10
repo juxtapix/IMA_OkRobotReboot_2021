@@ -64,7 +64,6 @@ function mouseDragged() {
 function endPath() {
     newPath = true;
     penUp();
-    console.log("end path");
 }
 
 function clearDrawing() {

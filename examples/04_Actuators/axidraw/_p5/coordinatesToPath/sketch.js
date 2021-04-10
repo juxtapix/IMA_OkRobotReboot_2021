@@ -11,6 +11,11 @@ let myPath = [
 function setup() {
     serial = new p5.SerialPort(); // new instance of the serial port library
     serial.open(portName);
+
+    axiDraw();
+}
+
+function axiDraw(){
     penDown();
     moveAlong(myPath);
     penUp();

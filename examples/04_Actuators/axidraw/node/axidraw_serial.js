@@ -16,11 +16,11 @@ function init() {
 
     if (portAxiDraw.opening) {
         console.log(portAxiDraw.path + ' is open...');
-        draw();
+        axiDraw();
     }
 }
 
-function draw() {
+function axiDraw() {
     // meaneuvering AxiDraw with the below action sequence
     penUp();
     move(1000, 1000, 0);

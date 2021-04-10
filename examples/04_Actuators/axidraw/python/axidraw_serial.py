@@ -20,10 +20,10 @@ def init():
 
     if port_axidraw.isOpen():
         print(port_axidraw.name + ' is open...')
-        draw()
+        axidraw()
 
 
-def draw():
+def axidraw():
     # meaneuvering AxiDraw with the below action sequence
     pen_up()
     move(1000, 1000, 0)
