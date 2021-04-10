@@ -1,0 +1,14 @@
+{
+  "name": "axidraw_serial_node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "axidraw_serial.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "serialport": "^9.0.7"
+  }
+}
